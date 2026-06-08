@@ -1,0 +1,552 @@
+@import url("https://fonts.googleapis.com/css2?family=Homenaje&display=swap");
+
+/* BASE STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.about,
+.beverages,
+.menu-section {
+  border-top: 1px solid #cb997d;
+  padding-top: 60px;
+}
+
+/* NAVIGATION */
+
+.navbar {
+  height: 70px;
+  background: #26150d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #ab907c;
+  font-family: "Homenaje", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ab907c;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 18px 45px;
+  background: #af8970;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 6px;
+}
+.hero-button:hover {
+  background: #b9937a;
+}
+
+.hero:has(.hero-overlay) {
+  height: 600px;
+  background: #d9d9d9;
+}
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.hero-content {
+  margin-left: 60px;
+  margin-right: auto;
+  z-index: 2;
+  text-align: left;
+}
+.hero-content h1 {
+  color: #3b2014;
+  font-size: 3.4rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.hero-content p {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Main */
+.main-content {
+  padding: 60px 80px;
+}
+
+.popular h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+/* Popular Items */
+.items-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+.item-card {
+  width: 350px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 5%;
+}
+.items-grid :hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+.item-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* About Us */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+.about-text {
+  flex: 1;
+}
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.about-text p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  max-width: 700px;
+}
+.about-image {
+  width: 500px;
+  height: 300px;
+  background: #d3d3d3;
+  position: relative;
+  overflow: hidden;
+}
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* MENU PAGE */
+.hero:has(.hero-text) {
+  width: 90%;
+  height: 260px;
+  margin: 60px auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* Beverages */
+.beverages {
+  text-align: center;
+  padding: 40px 20px;
+}
+.beverages h2 {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+}
+
+/* Our Signature Beverage */
+.drink-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  width: 80%;
+  margin: auto;
+}
+.drink-grid :hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+.drink-item {
+  text-align: center;
+}
+.drink-item h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+.drink-item span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.drink-card {
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 5%;
+}
+.drink-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.drink-card h3 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.download-menu {
+  display: inline-block;
+  margin-bottom: 40px;
+  padding: 12px 24px;
+  background: #26150d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.download-menu:hover {
+  background: #4a2a1a;
+}
+
+/* Menu Section */
+.menu-section {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  padding: 100px 80px;
+}
+.menu-column h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+.menu-item {
+  margin-bottom: 30px;
+}
+.menu-item-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.menu-item-heading span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.menu-item h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.menu-item p {
+  font-size: 1.4rem;
+}
+
+/* LOCATION */
+.location-page {
+  padding: 80px 0;
+}
+
+.location-section,
+.contact-section,
+.faq-section {
+  width: 70%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.location-section h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Location Grid */
+.map-box {
+  width: 100%;
+  height: 550px;
+  background: #d9d9d9;
+  margin-bottom: 60px;
+}
+
+/* Contact Form */
+.chat-section {
+  min-height: 650px;
+  background: #593829;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 24px;
+}
+
+.chat-card {
+  width: 70%;
+  max-width: 1100px;
+  min-height: 560px;
+  background: linear-gradient(to bottom, #fff 45%, #D3A88B 100%);
+  border-radius: 28px 28px 0 0;
+  padding: 50px 60px;
+}
+
+.chat-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.chat-logo {
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  background: linear-gradient(to bottom, #D3A88B, #f3f3f3);
+}
+
+.chat-content {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 80px;
+}
+
+.chat-text h2 {
+  font-size: 4rem;
+  margin-bottom: 25px;
+}
+
+.chat-text p {
+  color: #000;
+  background: none;
+  width: auto;
+  height: auto;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+.chat-text p:last-child {
+  width: 60%;
+}
+
+.chat-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-form label {
+  color: #000;
+  background: none;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.chat-form input,
+.chat-form textarea {
+  width: 100%;
+  border: 1px solid #D3A88B;
+  background: #fff;
+  padding: 12px;
+  font-size: 1rem;
+  margin-bottom: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.chat-form input {
+  height: 52px;
+}
+
+.chat-form textarea {
+  height: 95px;
+  resize: none;
+}
+
+.chat-form button {
+  width: fit-content;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #000;
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.chat-form button:hover {
+  background: #333;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #26150d;
+  color: #ab907c;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+
+.footer-column h3 {
+  margin-bottom: 15px;
+}
+
+.footer-column a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #ab907c;
+  margin-bottom: 8px;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .items-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-image {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .drink-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .menu-section {
+    flex-direction: column;
+    gap: 60px;
+    padding: 60px 40px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    padding: 40px 24px;
+  }
+
+  .hero-content {
+    margin-left: 24px;
+  }
+
+  .hero-content h1,
+  .hero-text {
+    font-size: 2.5rem;
+  }
+
+  .drink-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .chat-card {
+    width: 95%;
+    padding: 40px 28px;
+  }
+
+  .chat-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .chat-text h2 {
+    font-size: 3rem;
+  }
+
+  .chat-dots {
+    gap: 12px;
+  }
+
+  .chat-dots span {
+    width: 34px;
+  }
+}
